@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['header.component.scss'],
 })
 export class HeaderComponent {
+  @Input() back: boolean = false;
   @Input() page: string = '';
   constructor() {}
 }

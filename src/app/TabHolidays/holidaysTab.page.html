@@ -1,1 +1,10 @@
 <app-header [page]="page"></app-header>
+
+<ion-content [fullscreen]="true">
+  <app-list
+    [list]="places"
+    (idToSelect)="goToDetailPage($event)"
+    (idToEdit)="goToEditPage($event)"
+    (idToDelete)="deletePlace($event)"
+  ></app-list>
+</ion-content>

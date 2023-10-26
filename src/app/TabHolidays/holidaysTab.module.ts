@@ -7,6 +7,7 @@ import { HolidaysTabPage } from './holidaysTab.page';
 import { HolidaysTabPageRoutingModule } from './holidaysTab-routing.module';
 import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
+import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { HeaderComponentModule } from '../shared/components/header/header.module
     ListComponentModule,
     HeaderComponentModule,
   ],
-  declarations: [HolidaysTabPage],
+  declarations: [HolidaysTabPage, HolidayDetailsTabPage],
 })
 export class HolidaysTabPageModule {}

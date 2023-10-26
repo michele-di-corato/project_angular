@@ -1,0 +1,26 @@
+<app-header [page]="page" [back]="back"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="place">
+    <img
+      alt="Silhouette of mountains"
+      src="https://ionicframework.com/docs/img/demos/card-media.png"
+    />
+    <ion-card-header>
+      <ion-card-title>City: {{place.city}}</ion-card-title>
+      <ion-card-subtitle>Country: {{place.country}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>Best season to visit: </strong> {{season}}</p>
+      <p><strong>Kind of trip: </strong> {{holiday}}</p>
+      <p *ngIf="place.temperatureMin || place.temperatureMax">
+        <strong>Temperatures: </strong> {{place.temperatureMin}} -
+        {{place.temperatureMax}} °C
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="!place">
+    <ion-card-title>This place is not available</ion-card-title>
+  </ion-card>
+</ion-content>

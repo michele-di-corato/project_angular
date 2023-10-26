@@ -8,17 +8,17 @@ import { ItemList } from '../../interfaces/list.interface';
 })
 export class ListComponent {
   @Input() list: ItemList[] = [];
-  @Output() idToSelect: EventEmitter<string> = new EventEmitter<string>();
-  @Output() idToEdit: EventEmitter<string> = new EventEmitter<string>();
-  @Output() idToDelete: EventEmitter<string> = new EventEmitter<string>();
+  @Output() idToSelect: EventEmitter<number> = new EventEmitter<number>();
+  @Output() idToEdit: EventEmitter<number> = new EventEmitter<number>();
+  @Output() idToDelete: EventEmitter<number> = new EventEmitter<number>();
   constructor() {}
-  selectById(id: string) {
+  selectById(id: number) {
     this.idToSelect.emit(id);
   }
-  editById(id: string) {
+  editById(id: number) {
     this.idToEdit.emit(id);
   }
-  deleteById(id: string) {
+  deleteById(id: number) {
     this.idToDelete.emit(id);
   }
 }
