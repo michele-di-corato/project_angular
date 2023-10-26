@@ -1,4 +1,4 @@
-import { HolidayType, PlaceDto } from './holiday.interface';
+import { HolidayType } from './holiday.interface';
 
 export interface UserDto {
   id: number;
@@ -8,7 +8,7 @@ export interface UserDto {
   birthYear: number;
   residence: string;
   favouriteHolidayType?: HolidayType;
-  favouritePlace?: PlaceDto;
+  favouritePlace?: number;
 }
 
 export enum Genders {

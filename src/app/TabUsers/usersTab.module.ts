@@ -9,6 +9,7 @@ import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
 import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
 import { UserEditTabPage } from './editUser/editUser.page';
+import { UserCreateTabPage } from './createUser/createUser.page';
 
 @NgModule({
   imports: [
@@ -20,6 +21,11 @@ import { UserEditTabPage } from './editUser/editUser.page';
     HeaderComponentModule,
     ReactiveFormsModule,
   ],
-  declarations: [UsersTabPage, UserDetailsTabPage, UserEditTabPage],
+  declarations: [
+    UsersTabPage,
+    UserDetailsTabPage,
+    UserEditTabPage,
+    UserCreateTabPage,
+  ],
 })
 export class UsersTabPageModule {}

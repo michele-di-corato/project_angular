@@ -12,11 +12,11 @@ import {
 import { HolidayService } from 'src/app/shared/services/holiday.service';
 
 @Component({
-  selector: 'app-edit-user',
-  templateUrl: 'editUser.page.html',
-  styleUrls: ['editUser.page.scss'],
+  selector: 'app-create-user',
+  templateUrl: 'createUser.page.html',
+  styleUrls: ['createUser.page.scss'],
 })
-export class UserEditTabPage {
+export class UserCreateTabPage {
   page: string = 'users';
   back: boolean = true;
   user: UserDto | undefined;
@@ -67,7 +67,7 @@ export class UserEditTabPage {
   }
   submitForm() {
     if (this.formUser?.valid) {
-      this._userService.updateUser(this.formUser?.value);
+      this._userService.addUser(this.formUser?.value);
     }
     this._location.back();
   }
