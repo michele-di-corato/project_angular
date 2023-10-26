@@ -8,6 +8,7 @@ import { UsersTabPageRoutingModule } from './usersTab-routing.module';
 import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
 import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
+import { UserEditTabPage } from './editUser/editUser.page';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
     HeaderComponentModule,
     ReactiveFormsModule,
   ],
-  declarations: [UsersTabPage, UserDetailsTabPage],
+  declarations: [UsersTabPage, UserDetailsTabPage, UserEditTabPage],
 })
 export class UsersTabPageModule {}
