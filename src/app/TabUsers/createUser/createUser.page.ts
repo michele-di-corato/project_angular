@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from 'src/app/shared/services/user.service';
 import { Genders, UserDto } from 'src/app/shared/interfaces/user.interface';
-import { ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
 import { Selector } from 'src/app/shared/interfaces/selector.interface';
@@ -25,11 +24,8 @@ export class UserCreateTabPage {
   constructor(
     private readonly _userService: UserService,
     private readonly _holidayService: HolidayService,
-    private readonly _route: ActivatedRoute,
     private readonly _location: Location
   ) {
-    const id = this._route.snapshot.params['id'];
-    this.user = this._userService.getUserById(Number(id));
     this._holidayService.placeOb$.subscribe((placeList: PlaceDto[]) => {
       this.places = placeList.map((element: PlaceDto) => {
         return {

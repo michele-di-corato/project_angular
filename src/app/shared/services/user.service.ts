@@ -17,6 +17,7 @@ export class UserService {
       birthYear: 1985,
       residence: 'New York',
       favouriteHolidayType: HolidayType.Adventure,
+      favouritePlace: 1,
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ export class UserService {
       birthYear: 1990,
       residence: 'Los Angeles',
       favouriteHolidayType: HolidayType.Culture,
+      favouritePlace: 2,
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ export class UserService {
       birthYear: 1982,
       residence: 'London',
       favouriteHolidayType: HolidayType.Adventure,
+      favouritePlace: 3,
     },
     {
       id: 4,
@@ -44,6 +47,7 @@ export class UserService {
       birthYear: 1988,
       residence: 'Sydney',
       favouriteHolidayType: HolidayType.Relax,
+      favouritePlace: 4,
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ export class UserService {
       birthYear: 1979,
       residence: 'Berlin',
       favouriteHolidayType: HolidayType.Culture,
+      favouritePlace: 5,
     },
     {
       id: 6,
@@ -62,6 +67,7 @@ export class UserService {
       birthYear: 1987,
       residence: 'Toronto',
       favouriteHolidayType: HolidayType.Family,
+      favouritePlace: 6,
     },
     {
       id: 7,
@@ -71,6 +77,7 @@ export class UserService {
       birthYear: 1981,
       residence: 'Tokyo',
       favouriteHolidayType: HolidayType.Adventure,
+      favouritePlace: 7,
     },
     {
       id: 8,
@@ -80,6 +87,7 @@ export class UserService {
       birthYear: 1989,
       residence: 'Paris',
       favouriteHolidayType: HolidayType.Culture,
+      favouritePlace: 8,
     },
     {
       id: 9,
@@ -89,6 +97,7 @@ export class UserService {
       birthYear: 1984,
       residence: 'Sydney',
       favouriteHolidayType: HolidayType.Relax,
+      favouritePlace: 9,
     },
     {
       id: 10,
@@ -98,6 +107,7 @@ export class UserService {
       birthYear: 1983,
       residence: 'Barcelona',
       favouriteHolidayType: HolidayType.Culture,
+      favouritePlace: 10,
     },
   ];
   private _numId = this._users.length;
