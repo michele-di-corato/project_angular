@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['holidaysTab.page.scss'],
 })
 export class HolidaysTabPage {
+  page: string = 'holidays';
   constructor() {}
 }

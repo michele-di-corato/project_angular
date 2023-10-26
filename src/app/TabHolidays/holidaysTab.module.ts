@@ -2,12 +2,21 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './holidaysTab.page';
+import { HolidaysTabPage } from './holidaysTab.page';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { HolidaysTabPageRoutingModule } from './holidaysTab-routing.module';
+import { ListComponentModule } from '../shared/components/list/list.module';
+import { HeaderComponentModule } from '../shared/components/header/header.module';
 
 @NgModule({
-  imports: [IonicModule, CommonModule, FormsModule, Tab1PageRoutingModule],
-  declarations: [Tab1Page],
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule,
+    HolidaysTabPageRoutingModule,
+    ListComponentModule,
+    HeaderComponentModule,
+  ],
+  declarations: [HolidaysTabPage],
 })
-export class Tab1PageModule {}
+export class HolidaysTabPageModule {}
