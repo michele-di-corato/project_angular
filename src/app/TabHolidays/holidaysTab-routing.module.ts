@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HolidaysTabPage } from './holidaysTab.page';
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
+import { HolidayCreateTabPage } from './createHoliday/createHoliday.page';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'edit/:id',
     component: HolidayEditTabPage,
+  },
+  {
+    path: 'create',
+    component: HolidayCreateTabPage,
   },
 ];
 

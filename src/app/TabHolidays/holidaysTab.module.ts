@@ -9,6 +9,7 @@ import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
+import { HolidayCreateTabPage } from './createHoliday/createHoliday.page';
 
 @NgModule({
   imports: [
@@ -20,6 +21,11 @@ import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
     HeaderComponentModule,
     ReactiveFormsModule,
   ],
-  declarations: [HolidaysTabPage, HolidayDetailsTabPage, HolidayEditTabPage],
+  declarations: [
+    HolidaysTabPage,
+    HolidayDetailsTabPage,
+    HolidayEditTabPage,
+    HolidayCreateTabPage,
+  ],
 })
 export class HolidaysTabPageModule {}

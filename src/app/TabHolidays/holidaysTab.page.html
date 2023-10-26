@@ -7,4 +7,9 @@
     (idToEdit)="goToEditPage($event)"
     (idToDelete)="deletePlace($event)"
   ></app-list>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="goToAddPage()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
