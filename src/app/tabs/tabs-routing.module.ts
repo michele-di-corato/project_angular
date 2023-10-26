@@ -8,14 +8,14 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'holidays',
         loadChildren: () =>
           import('../TabHolidays/holidaysTab.module').then(
             (m) => m.HolidaysTabPageModule
           ),
       },
       {
-        path: 'tab2',
+        path: 'users',
         loadChildren: () =>
           import('../TabUsers/usersTab.module').then(
             (m) => m.UsersTabPageModule
@@ -23,14 +23,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/holidays',
         pathMatch: 'full',
       },
     ],
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/holidays',
     pathMatch: 'full',
   },
 ];
