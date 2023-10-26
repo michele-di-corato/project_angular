@@ -7,6 +7,7 @@ import { UsersTabPage } from './usersTab.page';
 import { UsersTabPageRoutingModule } from './usersTab-routing.module';
 import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
+import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { HeaderComponentModule } from '../shared/components/header/header.module
     HeaderComponentModule,
     ReactiveFormsModule,
   ],
-  declarations: [UsersTabPage],
+  declarations: [UsersTabPage, UserDetailsTabPage],
 })
 export class UsersTabPageModule {}

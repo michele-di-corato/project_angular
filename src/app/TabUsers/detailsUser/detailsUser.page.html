@@ -1,0 +1,22 @@
+<app-header [page]="page" [back]="back"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="user">
+    <ion-card-header>
+      <ion-card-title>{{user.name + ' ' + user.surname}}</ion-card-title>
+      <ion-card-subtitle>Gender: {{gender}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Birth year: </strong> {{user.birthYear}}</p>
+      <p><strong>City of residence: </strong> {{user.residence}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="favHoliday">
+    <ion-card-header>
+      <ion-card-title>Favourite type of holiday: {{favHoliday}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card *ngIf="!user">
+    <ion-card-title>This user is not available</ion-card-title>
+  </ion-card>
+</ion-content>

@@ -1,1 +1,15 @@
 <app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <app-list
+    [list]="users"
+    (idToSelect)="goToDetailPage($event)"
+    (idToEdit)="goToEditPage($event)"
+    (idToDelete)="deleteUser($event)"
+  ></app-list>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button color="dark" (click)="goToAddPage()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
