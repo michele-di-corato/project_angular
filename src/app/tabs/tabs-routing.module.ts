@@ -10,12 +10,16 @@ const routes: Routes = [
       {
         path: 'tab1',
         loadChildren: () =>
-          import('../tab1/tab1.module').then((m) => m.Tab1PageModule),
+          import('../TabHolidays/holidaysTab.module').then(
+            (m) => m.HolidaysTabPageModule
+          ),
       },
       {
         path: 'tab2',
         loadChildren: () =>
-          import('../tab2/tab2.module').then((m) => m.Tab2PageModule),
+          import('../TabUsers/usersTab.module').then(
+            (m) => m.UsersTabPageModule
+          ),
       },
       {
         path: '',
