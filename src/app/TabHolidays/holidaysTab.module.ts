@@ -1,13 +1,14 @@
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HolidaysTabPage } from './holidaysTab.page';
 
 import { HolidaysTabPageRoutingModule } from './holidaysTab-routing.module';
 import { ListComponentModule } from '../shared/components/list/list.module';
 import { HeaderComponentModule } from '../shared/components/header/header.module';
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
+import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
     HolidaysTabPageRoutingModule,
     ListComponentModule,
     HeaderComponentModule,
+    ReactiveFormsModule,
   ],
-  declarations: [HolidaysTabPage, HolidayDetailsTabPage],
+  declarations: [HolidaysTabPage, HolidayDetailsTabPage, HolidayEditTabPage],
 })
 export class HolidaysTabPageModule {}

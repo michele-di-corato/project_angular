@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HolidayType, PlaceDto, Season } from '../interfaces/holiday.interface';
 import { Observable, Subject, map } from 'rxjs';
+import { Selector } from '../interfaces/selector.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -220,5 +221,33 @@ export class HolidayService {
     createdPlace.id = this._numId;
     this._places.push(createdPlace);
     this._place$.next(this._places);
+  }
+  _getSeason(season: Season | undefined): string {
+    switch (season) {
+      case Season.Spring:
+        return 'Spring';
+      case Season.Summer:
+        return 'Summer';
+      case Season.Fall:
+        return 'Fall';
+      case Season.Winter:
+        return 'Winter';
+      default:
+        return 'Unknown Season';
+    }
+  }
+  _getHolidayType(holidayType: HolidayType | undefined): string {
+    switch (holidayType) {
+      case HolidayType.Adventure:
+        return 'Adventure';
+      case HolidayType.Relax:
+        return 'Relax';
+      case HolidayType.Family:
+        return 'Family';
+      case HolidayType.Culture:
+        return 'Culture';
+      default:
+        return 'Unknown Holiday Type';
+    }
   }
 }

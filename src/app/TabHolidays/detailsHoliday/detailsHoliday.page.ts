@@ -24,35 +24,9 @@ export class HolidayDetailsTabPage {
   ) {
     const id = this._route.snapshot.params['id'];
     this.place = this._holidayService.getPlaceById(Number(id));
-    this.season = this._getSeason(this.place?.favouriteSeason);
-    this.holiday = this._getHolidayType(this.place?.holidayType);
-  }
-  private _getSeason(season: Season | undefined): string {
-    switch (season) {
-      case Season.Spring:
-        return 'Spring';
-      case Season.Summer:
-        return 'Summer';
-      case Season.Fall:
-        return 'Fall';
-      case Season.Winter:
-        return 'Winter';
-      default:
-        return 'Unknown Season';
-    }
-  }
-  private _getHolidayType(holidayType: HolidayType | undefined): string {
-    switch (holidayType) {
-      case HolidayType.Adventure:
-        return 'Adventure';
-      case HolidayType.Relax:
-        return 'Relax';
-      case HolidayType.Family:
-        return 'Family';
-      case HolidayType.Culture:
-        return 'Culture';
-      default:
-        return 'Unknown Holiday Type';
-    }
+    this.season = this._holidayService._getSeason(this.place?.favouriteSeason);
+    this.holiday = this._holidayService._getHolidayType(
+      this.place?.holidayType
+    );
   }
 }
