@@ -3,6 +3,11 @@
     <ion-buttons *ngIf="back" slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-buttons *ngIf="!back" slot="end">
+      <ion-button (click)="goToCreate()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title> {{ page === "holidays" ? "Holidays" : "Users" }} </ion-title>
   </ion-toolbar>
 </ion-header>
