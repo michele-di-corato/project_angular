@@ -45,7 +45,10 @@
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-select formControlName="holidayType" label="Type of holiday: ">
+          <ion-select
+            formControlName="favouriteHolidayType"
+            label="Type of holiday: "
+          >
             <ion-select-option
               *ngFor="let type of holidayOptions"
               [value]="type.id"
