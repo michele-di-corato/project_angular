@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+import { HolidayType } from '../interfaces/holiday.interface';
 import { Genders, UserDto } from '../interfaces/user.interface';
-import { Observable, Subject, map } from 'rxjs';
-import { HolidayType, Season } from '../interfaces/holiday.interface';
 
 @Injectable({
   providedIn: 'root',

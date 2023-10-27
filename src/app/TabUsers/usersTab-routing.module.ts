@@ -4,6 +4,8 @@ import { UsersTabPage } from './usersTab.page';
 import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
 import { UserEditTabPage } from './editUser/editUser.page';
 import { UserCreateTabPage } from './createUser/createUser.page';
+import { oddGuardGuard } from '../odd-guard.guard';
+import { detailDataResolver } from '../detail-data.resolver';
 
 const routes: Routes = [
   {
@@ -13,6 +15,8 @@ const routes: Routes = [
   {
     path: 'details/:id',
     component: UserDetailsTabPage,
+    canActivate: [oddGuardGuard],
+    resolve: { user: detailDataResolver },
   },
   {
     path: 'edit/:id',

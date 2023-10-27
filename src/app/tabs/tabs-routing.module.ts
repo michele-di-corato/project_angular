@@ -16,6 +16,7 @@ const routes: Routes = [
       },
       {
         path: 'users',
+        canActivate: [],
         loadChildren: () =>
           import('../TabUsers/usersTab.module').then(
             (m) => m.UsersTabPageModule

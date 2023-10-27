@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { HolidayType, PlaceDto, Season } from '../interfaces/holiday.interface';
-import { Observable, Subject, map } from 'rxjs';
-import { Selector } from '../interfaces/selector.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HolidayService {
-  constructor() {}
+  constructor() {
+    console.log('Hello holiday service!');
+  }
   private _places: PlaceDto[] = [
     {
       id: 1,

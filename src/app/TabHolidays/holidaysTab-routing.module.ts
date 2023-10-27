@@ -4,6 +4,7 @@ import { HolidaysTabPage } from './holidaysTab.page';
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
 import { HolidayCreateTabPage } from './createHoliday/createHoliday.page';
+import { EvenGuardGuard } from '../even-guard.guard';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
   {
     path: 'details/:id',
     component: HolidayDetailsTabPage,
+    canActivate: [EvenGuardGuard],
   },
   {
     path: 'edit/:id',

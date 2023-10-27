@@ -24,7 +24,7 @@ export class HolidaysTabPage {
       this.places = placeList.map((element: PlaceDto) => {
         return {
           id: element.id,
-          name: element.city,
+          name: `${element.city} (${element.country})`,
         };
       });
     });

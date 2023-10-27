@@ -1,7 +1,7 @@
 <app-header [page]="page" [back]="back"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card *ngIf="user">
+<ion-content *ngIf="user" [fullscreen]="true">
+  <ion-card>
     <ion-card-header>
       <ion-card-title>{{user.name + ' ' + user.surname}}</ion-card-title>
       <ion-card-subtitle>Gender: {{gender}}</ion-card-subtitle>
@@ -22,7 +22,9 @@
       </p>
     </ion-card-content>
   </ion-card>
-  <ion-card *ngIf="!user">
+</ion-content>
+<ion-content *ngIf="!user" [fullscreen]="true">
+  <ion-card>
     <ion-card-title>This user is not available</ion-card-title>
   </ion-card>
 </ion-content>

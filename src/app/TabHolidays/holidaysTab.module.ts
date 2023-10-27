@@ -10,6 +10,7 @@ import { HeaderComponentModule } from '../shared/components/header/header.module
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
 import { HolidayCreateTabPage } from './createHoliday/createHoliday.page';
+import { HolidayService } from '../shared/services/holiday.service';
 
 @NgModule({
   imports: [

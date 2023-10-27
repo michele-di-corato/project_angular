@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-tabs',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss'],
 })
 export class TabsPage {
-  page: string = 'users';
-  constructor() {}
+  name;
+  constructor() {
+    this.name = new FormControl();
+  }
 }
