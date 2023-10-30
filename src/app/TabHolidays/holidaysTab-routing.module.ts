@@ -4,7 +4,7 @@ import { HolidaysTabPage } from './holidaysTab.page';
 import { HolidayDetailsTabPage } from './detailsHoliday/detailsHoliday.page';
 import { HolidayEditTabPage } from './editHoliday/editHoliday.page';
 import { HolidayCreateTabPage } from './createHoliday/createHoliday.page';
-import { EvenGuardGuard } from '../shared/guards/even-guard.guard';
+import { EvenGuardGuard } from '@guards/even-guard.guard';
 
 const routes: Routes = [
   {

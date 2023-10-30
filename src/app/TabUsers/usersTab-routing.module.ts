@@ -4,8 +4,8 @@ import { UsersTabPage } from './usersTab.page';
 import { UserDetailsTabPage } from './detailsUser/detailsUser.page';
 import { UserEditTabPage } from './editUser/editUser.page';
 import { UserCreateTabPage } from './createUser/createUser.page';
-import { oddGuardGuard } from '../shared/guards/odd-guard.guard';
-import { detailDataResolver } from '../shared/resolvers/detail-data.resolver';
+import { oddGuardGuard } from '@guards/odd-guard.guard';
+import { detailDataResolver } from '@resolvers/detail-data.resolver';
 
 const routes: Routes = [
   {
