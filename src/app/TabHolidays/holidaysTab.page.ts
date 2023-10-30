@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ItemList } from '../shared/interfaces/list.interface';
-import { HolidayService } from '../shared/services/holiday.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PlaceDto } from '../shared/interfaces/holiday.interface';
+import { PlaceDto } from '@interfaces/holiday.interface';
+import { ItemList } from '@interfaces/list.interface';
+import { HolidayService } from '@services/holiday.service';
 
 @Component({
   selector: 'app-holidays-tab',

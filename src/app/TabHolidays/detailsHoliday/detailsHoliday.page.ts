@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
-import { HolidayService } from 'src/app/shared/services/holiday.service';
-import {
-  HolidayType,
-  PlaceDto,
-  Season,
-} from 'src/app/shared/interfaces/holiday.interface';
 import { ActivatedRoute } from '@angular/router';
+import { PlaceDto } from '@interfaces/holiday.interface';
+import { HolidayService } from '@services/holiday.service';
 
 @Component({
   selector: 'app-holiday-details',

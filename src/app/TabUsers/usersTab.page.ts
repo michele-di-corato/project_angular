@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ItemList } from '../shared/interfaces/list.interface';
-import { UserService } from '../shared/services/user.service';
+import { ItemList } from '@interfaces/list.interface';
+import { UserService } from '@services/user.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { UserDto } from '../shared/interfaces/user.interface';
+import { UserDto } from '@interfaces/user.interface';
 
 @Component({
   selector: 'app-users-tab',

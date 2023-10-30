@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/shared/services/user.service';
-import { UserDto } from 'src/app/shared/interfaces/user.interface';
 import { ActivatedRoute } from '@angular/router';
-import { HolidayService } from 'src/app/shared/services/holiday.service';
-import { PlaceDto } from 'src/app/shared/interfaces/holiday.interface';
+import { PlaceDto } from '@interfaces/holiday.interface';
+import { UserDto } from '@interfaces/user.interface';
+import { HolidayService } from '@services/holiday.service';
+import { UserService } from '@services/user.service';
 
 @Component({
   selector: 'app-user-details',

@@ -1,13 +1,9 @@
-import { Component } from '@angular/core';
-import { HolidayService } from 'src/app/shared/services/holiday.service';
-import {
-  HolidayType,
-  PlaceDto,
-  Season,
-} from 'src/app/shared/interfaces/holiday.interface';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
-import { Selector } from 'src/app/shared/interfaces/selector.interface';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HolidayType, PlaceDto, Season } from '@interfaces/holiday.interface';
+import { Selector } from '@interfaces/selector.interface';
+import { HolidayService } from '@services/holiday.service';
 
 @Component({
   selector: 'app-create-holiday',

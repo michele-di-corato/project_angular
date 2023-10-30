@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
-import { UserService } from 'src/app/shared/services/user.service';
-import { Genders, UserDto } from 'src/app/shared/interfaces/user.interface';
-import { ActivatedRoute } from '@angular/router';
-import { FormControl, FormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
-import { Selector } from 'src/app/shared/interfaces/selector.interface';
-import {
-  HolidayType,
-  PlaceDto,
-} from 'src/app/shared/interfaces/holiday.interface';
-import { HolidayService } from 'src/app/shared/services/holiday.service';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { HolidayType, PlaceDto } from '@interfaces/holiday.interface';
+import { Selector } from '@interfaces/selector.interface';
+import { Genders, UserDto } from '@interfaces/user.interface';
+import { HolidayService } from '@services/holiday.service';
+import { UserService } from '@services/user.service';
 
 @Component({
   selector: 'app-edit-user',

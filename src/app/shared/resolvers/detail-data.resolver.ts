@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
 import { ResolveFn } from '@angular/router';
-import { UserService } from './shared/services/user.service';
-import { UserDto } from './shared/interfaces/user.interface';
+import { UserDto } from '../interfaces/user.interface';
+import { UserService } from '../services/user.service';
 
 export const detailDataResolver: ResolveFn<UserDto | undefined> = (
   route,
